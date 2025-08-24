@@ -52,6 +52,7 @@ print("Birlashtirilgan lug‘at:", merged)
 
 
 # 1 dan n gacha bo‘lgan sonlar uchun (x: x*x) ko‘rinishida lug‘at yarating.
+
 n = 5
 squares = {x: x**2 for x in range(1, n+1)}
 print("Kvadratli lug‘at:", squares)
@@ -63,6 +64,7 @@ print("Kvadratli lug‘at:", squares)
 
 
 # Kalitlar 1 dan 15 gacha, qiymatlar ularning kvadrati bo‘lgan lug‘atni chop eting.
+
 squares = {x: x**2 for x in range(1, 16)}
 print("1 dan 15 gacha kvadratlar lug‘ati:", squares)
 
@@ -99,8 +101,8 @@ for item in my_set:
 
 # Setga bitta yoki bir nechta element qo‘shing.
 my_set = {1, 2, 3}
-my_set.add(4)  # bitta element
-my_set.update([5, 6])  # bir nechta element
+my_set.add(4)  
+my_set.update([5, 6])
 print("Yangilangan set:", my_set)
 
 
@@ -111,8 +113,8 @@ print("Yangilangan set:", my_set)
 
 # Setdan elementlarni o‘chiring.
 my_set = {1, 2, 3, 4}
-my_set.remove(3)  # 3 ni o‘chiradi
-# my_set.remove(10) # Bu xato beradi agar 10 yo‘q bo‘lsa
+my_set.remove(3)  
+# my_set.remove(10)
 print("O‘chirilgan set:", my_set)
 
 
