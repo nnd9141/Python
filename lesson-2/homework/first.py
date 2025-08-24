@@ -1,3 +1,5 @@
+Age Calculator
+
 a = input('Ismingizni kiriting')
 b = int(input('Tugilgan yilingizni kiriting !'))
 
@@ -6,6 +8,8 @@ c = 2025 - b
 print(a, c)
 
 -------------------------------------------------
+
+Extract Car Names
 
 txt = 'LMaasleitbtui'
 
@@ -17,6 +21,8 @@ print(a,b)
 
 -------------------------------------------------
 
+Extract Car Names
+
 txt = 'MsaatmiazD'
 
 a = txt[::2]
@@ -27,6 +33,8 @@ print(a,b)
 
 -------------------------------------------------
 
+Extract Residence Area
+
 txt = "I'am John. I am from London"
 
 a = txt[21:27]
@@ -35,13 +43,20 @@ print(a)
 
 -------------------------------------------------
 
-txt = 'Salom'
+txt = input("Matn kiriting: ")
 
 a = txt[::-1]
 
 print(a)
 
 -------------------------------------------------
+
+Count Vowels
+
+text = input("Matn kiriting: ").lower()
+vowels = 'aeiou'
+count = sum(1 for char in text if char in vowels)
+print("Unli harflar soni:", count)
 
 -------------------------------------------------
 
@@ -53,7 +68,9 @@ print(eng_katta)
 
 -------------------------------------------------
 
-soz = input("So'z kiriting: ")
+Check Palindrome
+
+soz = input("So'z kiriting: ").lower()
 
 teskari = soz_tahlil[::-1]
 
@@ -63,6 +80,8 @@ else:
     print("Bu so'z palindrom emas.")
 
 -------------------------------------------------
+
+Extract Email Domain
 
 email = input("Email manzilini kiriting: ")
 
@@ -74,3 +93,13 @@ else:
 
 -------------------------------------------------
 
+Generate Random Password
+
+import random
+import string
+
+uzunlik = int(input("Parol uzunligini kiriting: "))
+belgilar = string.ascii_letters + string.digits + string.punctuation
+parol = ''.join(random.choice(belgilar) for _ in range(uzunlik))
+
+print("Yaratilgan parol:", parol)
